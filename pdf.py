@@ -10,17 +10,17 @@ def create_pdf(name, batch_code, submitted_to):
     c = canvas.Canvas(pdf_filename)
 
     # Add a snapshot of each step of deployment
-    c.drawString(100, 800, f"Step 1: Load Data")
+    c.drawString(100, 800, f"Step 1: Load Data from Week 4")
     c.drawString(120, 780, f"- Data loaded successfully")
 
-    c.drawString(100, 760, f"Step 2: Train Model")
-    c.drawString(120, 740, f"- Model trained successfully")
+    c.drawString(100, 760, f"Step 2: Save Model from Week 4")
+    c.drawString(120, 740, f"- Model saved successfully as 'iris_model.pkl")
 
-    c.drawString(100, 720, f"Step 3: Save Model")
-    c.drawString(120, 700, f"- Model saved as 'iris_model.pkl'")
+    c.drawString(100, 720, f"Step 3: Create Heroku app")
+    c.drawString(120, 700, f"- Created Heroku app as model-deploy-app1'")
 
-    c.drawString(100, 680, f"Step 4: Create Flask App")
-    c.drawString(120, 660, f"- Flask app created successfully")
+    c.drawString(100, 680, f"Step 4: Deploy model on Heroku")
+    c.drawString(120, 660, f"- Model deployed successfully")
 
     # Add user-specific information
     c.drawString(100, 620, f"Name: {name}")
